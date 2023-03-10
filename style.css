@@ -8,6 +8,11 @@
     font-family:'Note sans', sans-serif;
     outline: none;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 main{
     width: 100vw;
@@ -16,6 +21,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1024px;
 }
 .left_login{
     width: 50vw;
@@ -27,6 +33,7 @@ main{
 }
 .left_login_img{
     width: 40vw;
+    max-width: 480px;
 }
 .right_login{
     width: 50vw;
@@ -103,6 +110,7 @@ main{
     
 }
 @media only screen and (max-width:950px){
+   
     .card_login{
         width: 70%;     
     }
@@ -110,7 +118,7 @@ main{
         width: 55vw;
     }
 }
-@media only screen and (max-width:690px){
+@media only screen and (max-width:653px) and (max-height: 1000px){
     main{
         flex-direction: column;
     }
